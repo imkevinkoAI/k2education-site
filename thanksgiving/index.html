@@ -31,17 +31,19 @@ section{padding:44px 0;border-top:1px solid var(--line)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
 
 /* top bar */
-.top{background:var(--navy);color:#fff}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:52px}
-.brand{font-weight:800;letter-spacing:.02em;font-size:17px;text-decoration:none}
-.brand small{display:none;font-weight:500;opacity:.7;margin-left:6px;font-size:12px}
-.top nav a{font-size:13px;opacity:.85;text-decoration:none;margin-left:14px}
+.top{background:#fff;color:var(--navy);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--muted)}
+.brand img{height:36px;width:auto;display:block}
+.brand small{display:none;font-weight:600;font-size:12.5px;padding-left:10px;border-left:1px solid var(--line)}
+.top nav a{font-size:13.5px;font-weight:600;color:var(--navy);text-decoration:none;margin-left:14px}
 
 /* hero */
 .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 60%,#1d4fa8 100%);color:#fff;padding:36px 0 40px;position:relative;overflow:hidden}
 .hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(242,107,29,.45),rgba(242,107,29,0) 70%)}
 .hero .grid{display:grid;gap:26px;position:relative;z-index:1}
-.partner{font-size:13px;opacity:.85;font-weight:600}
+.partner{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.04em;color:rgba(255,255,255,.9)}
+.partner img{height:30px;width:auto;display:block}
 .hero h1{font-size:34px;line-height:1.15;margin:10px 0 8px;letter-spacing:-.02em}
 .hero h1 .yr{display:block;font-size:18px;color:#ffc59a;letter-spacing:.06em}
 .hero h1 .tg{color:#ff9a52}
@@ -143,7 +145,10 @@ details p{margin:0 0 14px;font-size:14.5px;color:#36405a}
 .btn-navy{background:var(--navy);color:#fff}
 .btn-outline{background:#fff;color:var(--navy);border:1px solid var(--line)}
 .poster{margin-top:18px}
-.poster img{width:100%;max-width:420px;border-radius:12px;border:1px solid var(--line);display:block}
+.poster{text-align:center}
+.poster a{display:inline-block;width:100%;max-width:560px}
+.poster img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
+.poster small{display:block;color:var(--muted);font-size:12.5px;margin-top:6px}
 
 footer{background:var(--navy);color:rgba(255,255,255,.75);font-size:12.5px;padding:22px 0;text-align:center}
 
@@ -173,7 +178,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.75);font-size:12.5px;paddi
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#">K2 EDUCATION<small>× Prestige Institute</small></a>
+    <a class="brand" href="#"><img src="assets/k2-logo.png" alt="K2 Education" width="644" height="160"><small>× Prestige Institute</small></a>
     <nav><a href="#schedule">일정</a><a href="#fee">비용</a><a href="#faq">FAQ</a></nav>
   </div>
 </header>
@@ -181,7 +186,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.75);font-size:12.5px;paddi
 <div class="hero">
   <div class="wrap grid">
     <div>
-      <div class="partner">K2 EDUCATION × PRESTIGE INSTITUTE, NJ</div>
+      <div class="partner"><img src="assets/k2-logo-white.png" alt="K2 Education" width="644" height="160"><span>× PRESTIGE INSTITUTE, NJ</span></div>
       <h1><span class="yr">2026</span><span class="tg">THANKSGIVING</span><br>SAT / ACT<br>INTENSIVE PROGRAM</h1>
       <span class="for">for Boarding School Students</span>
       <div class="facts">
@@ -346,7 +351,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.75);font-size:12.5px;paddi
       <a class="btn btn-navy" href="assets/K2_2026_Thanksgiving_Program.pdf" target="_blank" rel="noopener">프로그램 안내서 (PDF)</a>
       <a class="btn btn-outline" href="assets/K2_2026_Thanksgiving_Poster.pdf" target="_blank" rel="noopener">포스터 (PDF)</a>
     </div>
-    <div class="poster"><img src="assets/poster.jpg" alt="2026 Thanksgiving SAT/ACT Intensive Program 포스터" width="1024" height="1536"></div>
+    <div class="poster"><a href="assets/poster.jpg" target="_blank" rel="noopener"><img src="assets/poster.jpg" alt="2026 Thanksgiving SAT/ACT Intensive Program 포스터" width="1024" height="1536"></a><small>포스터를 누르면 크게 볼 수 있습니다</small></div>
   </section>
 
 </main>
